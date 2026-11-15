@@ -1,41 +1,50 @@
-CSE-101 Programming Assignment Repository
+# CSE 101 — Data Structures and Algorithms
 
-## How to work on an assignment
+Programming assignments completed for **CSE 101 at the University of California, Santa Cruz**.
 
-- For each assignment you will need to create a new directory and work in the new directory. 
-```bash
-mkdir pa{ID}
+The repository contains implementations of fundamental data structures, abstract data types, and algorithms using C and C++.
+
+## Assignments
+
+| Assignment | Language | Description |
+|---|---|---|
+| PA1 | C | List ADT and Lexicographic Sorting |
+| PA2 | C | Graph ADT and Breadth-First Search |
+| PA3 | C | Strongly Connected Components |
+| PA4 | C | Matrix ADT and Sparse Matrix Operations |
+| PA5 | C++ | List ADT Implementation |
+| PA6 | C++ | BigInteger ADT and Arithmetic |
+| PA7 | C++ | Dictionary ADT and Binary Search Trees |
+| PA8 | C++ | Dictionary ADT and Word Frequency Analysis |
+
+## Repository Structure
+
+```text
+cse101/
+├── README.md
+├── pa1/
+├── pa2/
+├── pa3/
+├── pa4/
+├── pa5/
+├── pa6/
+├── pa7/
+└── pa8/
 ```
-- When you make sufficient changes in your code and want to commit your changes, you can use following code:
+
+## Compilation
+
+Each assignment includes a Makefile.
+
+To compile an assignment:
+
 ```bash
-git add {modified/added-files}
-git commit -m {explanatory-message-for-the-changes}
-``` 
-- Above code will mark your changes on your local computer. In order to update your remote gitlab repository you need to push your changes using below code (you may be asked your password or passphrase):
-```bash
-git push
+cd pa{id}
+make
 ```
 
-## How to test your code
-
-- We provide public tests for you to test your code. Test files are contained in `cse-101-public-tests` folder. Note that this folder is just a reference to an other public repository at a certain commit id which continuously gets updated. 
-- In order to obtain actual files within this directory. Run the following command:
-```bash
-git submodule update --init
-``` 
-
-- We will announce the release of tests on regular basis. Once announced, for each assignment you will need to run the following command to obtain the updated test files for specific assignment. This commead will update the local test files as well as the remote repository:
+To remove compiled files:
 
 ```bash
-git submodule update --remote
-git add cse-101-public-tests
-git commit -m "add new test files"
-git push
+make clean
 ```
-
-- Once obtained you can run the tests as follows:
-
-```bash
-cd pa{ID} # Go into specific asssignment folder in your working directory
-chmod +x ./../cse-101-public-tests/pa{ID}/pa{ID}.sh
-./../cse-101-public-tests/pa{ID}/pa{ID}.sh
