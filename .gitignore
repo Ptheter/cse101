@@ -1,11 +1,10 @@
-# Ignore Object Files
-**.o
+# Object files
+*.o
 
-# Ignore text files
-**.txt
+# macOS
+.DS_Store
 
-# Ignore shell script
-**.sh
+# Temporary files
+*~
+*.swp
 
-# Ignore misc
-**.DS_Store
