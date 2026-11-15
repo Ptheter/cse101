@@ -17,21 +17,6 @@ The repository contains implementations of fundamental data structures, abstract
 | PA7 | C++ | Dictionary ADT and Binary Search Trees |
 | PA8 | C++ | Dictionary ADT and Word Frequency Analysis |
 
-## Repository Structure
-
-```text
-cse101/
-├── README.md
-├── pa1/
-├── pa2/
-├── pa3/
-├── pa4/
-├── pa5/
-├── pa6/
-├── pa7/
-└── pa8/
-```
-
 ## Compilation
 
 Each assignment includes a Makefile.
